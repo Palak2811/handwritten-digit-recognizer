@@ -1,0 +1,83 @@
+# Handwritten Digit Recognition Web App
+
+An interactive web application that allows users to draw handwritten digits on the screen and predicts the digit using a trained deep learning model built with Keras and TensorFlow. The app is deployed locally using Streamlit and provides real-time predictions.
+
+# Features
+
+Draw digits directly on the browser
+
+Real-time digit prediction using a neural network
+
+Displays prediction confidence
+
+Simple and intuitive UI powered by Streamlit
+
+Trained on the MNIST dataset
+
+# Tech Stack
+
+Python
+
+TensorFlow / Keras
+
+NumPy
+
+OpenCV
+
+Streamlit
+
+streamlit-drawable-canvas
+
+# Model Architecture
+Input (784)
+→ Dense(100, ReLU)
+→ Dense(100, ReLU)
+→ Dense(10, Sigmoid)
+
+
+# Trained using:
+
+Optimizer: Adam
+
+Loss: Sparse Categorical Crossentropy
+
+Dataset: MNIST
+
+# Installation & Setup
+1. Clone the repository
+git clone https://github.com/Palak2811/handwritten-digit-recognizer
+cd handwritten-digit-recognizer
+
+
+2. Create virtual environment & activate
+python -m venv venv
+venv\Scripts\activate
+
+3. Install dependencies
+pip install -r requirements.txt
+pip install streamlit streamlit-drawable-canvas opencv-python
+
+4. Train the model
+python train.py
+
+5. Run the web app
+streamlit run app.py
+
+
+Open browser at:
+
+http://localhost:8501
+
+# How It Works
+
+User draws a digit on the canvas
+
+Drawing is resized to 28×28 and normalized
+
+The trained model predicts the digit
+
+The result and confidence are displayed instantly
+
+# Results
+
+Achieves 97.57% accuracy on MNIST handwritten digit recognition with smooth real-time inference.
