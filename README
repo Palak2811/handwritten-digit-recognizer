@@ -1,4 +1,4 @@
-# Handwritten Digit Recognition Web App
+# Handwritten Digit Recognition Web App using ANN
 
 An interactive web application that allows users to draw handwritten digits on the screen and predicts the digit using a trained deep learning model built with Keras and TensorFlow. The app is deployed locally using Streamlit and provides real-time predictions.
 
